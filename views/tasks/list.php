@@ -1,4 +1,18 @@
 <?php ob_start(); ?>
+
+<!-- Bubble Animation Demo -->
+<div style="text-align: center; margin: 30px 0;">
+    <h3 style="color: #4f46e5; margin-bottom: 20px;">TO DO LIST</h3>
+    <div class="bubble-container">
+        <div class="Strich1"></div>
+        <div class="Strich2"></div>
+        <div class="bubble"></div>
+        <div class="bubble1"></div>
+        <div class="bubble2"></div>
+        <div class="bubble3"></div>
+    </div>
+</div>
+
 <div class="kanban-board">
     <?php foreach ($columns as $statusKey => $column): ?>
         <div class="kanban-column" data-status="<?= $statusKey ?>">
